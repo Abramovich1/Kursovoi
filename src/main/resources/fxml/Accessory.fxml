@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.AccessoryController">
+   <children>
+      <Label layoutX="386.0" layoutY="28.0" text="Комплектующие">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="mainButton" layoutX="50.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #F39C63;" text="Назад на главную" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="accessoryTable" layoutX="50.0" layoutY="325.0" prefHeight="350.0" prefWidth="900.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="82.0" text="Воспользуйтесь поиском по комплектующим">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchAccessoryField" layoutX="375.0" layoutY="78.0" prefHeight="25.0" prefWidth="575.0" promptText="Например &quot;Шина Road Runner&quot;" />
+      <ListView fx:id="accessoryListView" layoutX="230.0" layoutY="115.0" prefHeight="200.0" prefWidth="720.0" />
+      <Button fx:id="addAccessoryButton" layoutX="750.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #F39C63;" text="Заказать комплектующие" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="addToOrderButton" layoutX="750.0" layoutY="736.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #F39C63;" text="Добавить" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="accessoryField" layoutX="50.0" layoutY="686.0" prefHeight="90.0" prefWidth="685.0" promptText="Введите комплектующие" />
+      <Button fx:id="bmwButton" layoutX="50.0" layoutY="115.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="BMW">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/BMW.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="audiButton" layoutX="50.0" layoutY="155.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Audi">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Audi.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="seatButton" layoutX="50.0" layoutY="195.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Seat">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Seat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="opelButton" layoutX="50.0" layoutY="235.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Opel">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Opel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="fordButton" layoutX="50.0" layoutY="275.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Ford">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Ford.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

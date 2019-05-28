@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.NewOrderController">
+   <children>
+      <TextArea fx:id="accessoryField" layoutX="50.0" layoutY="399.0" prefHeight="150.0" prefWidth="200.0" promptText="Введите комплектующие" />
+      <Label layoutX="265.0" layoutY="25.0" text="Добавление заказа">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderButton" layoutX="50.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #F39C63;" text="К списку заказов" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="orderTable" layoutX="50.0" layoutY="83.0" prefHeight="300.0" prefWidth="700.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="addOrderButton" layoutX="565.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #F39C63;" text="Добавить заказ" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="customerField" layoutX="307.0" layoutY="509.0" prefHeight="40.0" prefWidth="200.0" promptText="Введите клиента" />
+      <Button fx:id="addAccessoryButton" layoutX="250.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="30.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="addCustomerButton" layoutX="507.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="30.0" text="" />
+         </graphic>
+      </Button>
+   </children>
+</Pane>
